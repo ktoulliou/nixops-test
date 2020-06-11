@@ -1,1 +1,3 @@
 # nixops-test
+
+test
