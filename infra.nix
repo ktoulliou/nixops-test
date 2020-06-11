@@ -14,10 +14,10 @@
     imports = [ ./pc1/configuration.nix
               ];
   };
-#  pc2 = {
-#    deployment.targetHost = "nixos-pc2";
-#    imports = [ ./pc2/configuration.nix
-#              ];
-#  };
+  pc2 = {
+    deployment.targetHost = "nixos-pc2";
+    imports = [ ./pc2/configuration.nix
+              ];
+  };
   network.description = "Infra test Nixos";
 }
