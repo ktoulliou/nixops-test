@@ -11,7 +11,8 @@
     font = "Lat2-Terminus16";
     keyMap = "fr";
   };
-  services.sshd.enable = true;
+  services.openssh.enable = true;
+  services.openssh.permitRootLogin = "yes";
   environment.systemPackages = with pkgs; [
     wget git nixops
   ];

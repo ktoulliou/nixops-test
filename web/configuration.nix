@@ -15,8 +15,13 @@
     enable = true;
     permitRootLogin = "yes";
   };
+  networking.firewall.enable = true;
+  networking.firewall.allowedTCPPorts = [ 80 ];
   services.nginx = {
     enable = true;
+    virtualHosts."nixos-web" = {
+      root = "/var/www/nixos-web";
+    };
   };
 }
 
