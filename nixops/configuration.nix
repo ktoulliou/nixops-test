@@ -13,7 +13,7 @@
   };
   services.sshd.enable = true;
   environment.systemPackages = with pkgs; [
-    wget git
+    wget git nixops
   ];
 
 }
